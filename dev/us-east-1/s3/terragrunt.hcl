@@ -8,11 +8,12 @@ locals {
 }
 
 terraform {
-  source = "git::git@github.com:darren-rose/terraform-modules.git//s3?ref=v0.0.2"
+  source = "git::git@github.com:darren-rose/terraform-modules.git//s3?ref=v0.0.3"
+  # source = "../../../../..//modules//s3"
 }
 
 inputs = {
-  name        = "training-general-${local.env_vars.locals.environment}-${local.region_vars.locals.aws_region}"
+  name        = "koala-campaign-${local.env_vars.locals.environment}-${local.region_vars.locals.aws_region}"
   environment = local.env_vars.locals.environment
 }
 
