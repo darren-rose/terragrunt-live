@@ -9,7 +9,6 @@ locals {
 
 terraform {
   source = "git::git@github.com:darren-rose/terraform-modules.git//s3?ref=v0.0.3"
-  # source = "../../../../..//modules//s3"
 }
 
 inputs = {
